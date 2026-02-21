@@ -1,0 +1,76 @@
+﻿[36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 18 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 1.16s
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([31mΓ£   
+ ù[39m Build fai    
+led in 1.16s:Str    
+ing) [], RemoteE    
+xception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+[31merror during 
+build:
+[31m[vite:css] 
+Failed to load 
+PostCSS config 
+(searchPath: 
+C:/Dwarfinder): 
+[Error] Loading 
+PostCSS Plugin 
+failed: Cannot find 
+module 'autoprefixer'
+Require stack:
+- C:\Dwarfinder\postc
+ss.config.js
+
+(@C:\Dwarfinder\postc
+ss.config.js)
+Error: Loading 
+PostCSS Plugin 
+failed: Cannot find 
+module 'autoprefixer'
+Require stack:
+- C:\Dwarfinder\postc
+ss.config.js
+
+(@C:\Dwarfinder\postc
+ss.config.js)
+    at load (file:///
+C:/Dwarfinder/node_mo
+dules/vite/dist/node/
+chunks/config.js:7660
+:10)
+    at async 
+Promise.all (index 1)
+    at async plugins 
+(file:///C:/Dwarfinde
+r/node_modules/vite/d
+ist/node/chunks/confi
+g.js:7682:11)
+    at async 
+processResult (file:/
+//C:/Dwarfinder/node_
+modules/vite/dist/nod
+e/chunks/config.js:77
+21:13)[31m
+file: [36mC:/Dwarfin
+der/resources/css/app
+.css[31m
+[39m

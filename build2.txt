@@ -1,0 +1,73 @@
+﻿[36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 4 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 1.44s
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([31mΓ£   
+ ù[39m Build fai    
+led in 1.44s:Str    
+ing) [], RemoteE    
+xception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+[31merror during 
+build:
+[31m[vite:css] 
+[postcss] It looks 
+like you're trying 
+to use `tailwindcss` 
+directly as a 
+PostCSS plugin. The 
+PostCSS plugin has 
+moved to a separate 
+package, so to 
+continue using 
+Tailwind CSS with 
+PostCSS you'll need 
+to install `@tailwind
+css/postcss` and 
+update your PostCSS 
+configuration.[31m
+file: [36mC:/Dwarfin
+der/resources/css/app
+.css:undefined:NaN[3
+1m
+    at at (C:\Dwarfin
+der\node_modules\tail
+windcss\dist\lib.js:3
+8:1643)
+    at 
+LazyResult.runOnRoot 
+(C:\Dwarfinder\node_m
+odules\postcss\lib\la
+zy-result.js:361:16)
+    at 
+LazyResult.runAsync (
+C:\Dwarfinder\node_mo
+dules\postcss\lib\laz
+y-result.js:290:26)
+    at 
+LazyResult.async (C:\
+Dwarfinder\node_modul
+es\postcss\lib\lazy-r
+esult.js:192:30)
+    at 
+LazyResult.then (C:\D
+warfinder\node_module
+s\postcss\lib\lazy-re
+sult.js:436:17)[39m

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Tests\Feature\LikesAndProfileTest" file="C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php" tests="4" assertions="4" errors="0" failures="4" skipped="0" time="0.863757">
+    <testcase name="test_can_view_another_user_profile" file="C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php" line="15" class="Tests\Feature\LikesAndProfileTest" classname="Tests.Feature.LikesAndProfileTest" assertions="1" time="0.753242">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\LikesAndProfileTest::test_can_view_another_user_profile&#13;
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+&#13;
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:174
+C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php:26</failure>
+    </testcase>
+    <testcase name="test_cannot_view_own_profile_via_public_route" file="C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php" line="30" class="Tests\Feature\LikesAndProfileTest" classname="Tests.Feature.LikesAndProfileTest" assertions="1" time="0.031536">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\LikesAndProfileTest::test_cannot_view_own_profile_via_public_route&#13;
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+&#13;
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:174
+C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php:38</failure>
+    </testcase>
+    <testcase name="test_can_see_likes_received" file="C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php" line="42" class="Tests\Feature\LikesAndProfileTest" classname="Tests.Feature.LikesAndProfileTest" assertions="1" time="0.041413">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\LikesAndProfileTest::test_can_see_likes_received&#13;
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+&#13;
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:174
+C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php:58</failure>
+    </testcase>
+    <testcase name="test_matches_do_not_appear_in_likes" file="C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php" line="62" class="Tests\Feature\LikesAndProfileTest" classname="Tests.Feature.LikesAndProfileTest" assertions="1" time="0.037566">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\LikesAndProfileTest::test_matches_do_not_appear_in_likes&#13;
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+&#13;
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\Dwarfinder\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:174
+C:\Dwarfinder\tests\Feature\LikesAndProfileTest.php:83</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
