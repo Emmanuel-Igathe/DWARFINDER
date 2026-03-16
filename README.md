@@ -1,6 +1,7 @@
 # DWARFINDER
 
 DWARFINDER IS A DATING WEBSITE FOR SHORT STATURE INDIVIDUALS. IT HAS COMBINED IDEAS FROM OTHER DATING APPS SUCH AS CUPID AND TINDER. DWARFINDERS MAIN GOAL IS TO MAKE CONNECTION BETWEEN SHORT STATURE INDIVIDUALS WORLDWIDE EASIER.
+`DWARFINDER...SMALL STATURE BIG HEART
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
