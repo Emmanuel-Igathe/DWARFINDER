@@ -27,6 +27,18 @@ class DiscoveryController extends Controller
                 $query->where('is_active', true)
                       ->where('user_id', '!=', Auth::id());
                 
+                // Filter by gender preference
+                if ($currentProfile) {
+                    $genderPref = $currentProfile->looking_for;
+                    if ($genderPref !== 'both' && $genderPref !== 'all') {
+                        $query->where('gender', $genderPref);
+                    }
+                    
+                    // Also filter by what they are looking for (must match user's gender)
+                    $userGender = $currentProfile->gender;
+                    $query->whereIn('looking_for', [$userGender, 'both', 'all']);
+                }
+                
                 // Filter by age preference if set
                 if ($currentProfile) {
                     $minAge = $currentProfile->min_age_preference ?? 18;

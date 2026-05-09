@@ -29,19 +29,17 @@ class Profile extends Model
 
     public function photos()
     {
-        if (class_exists('App\Models\Photo')) {
-            return $this->hasMany(Photo::class, 'user_id', 'user_id');
-        }
-        return new \Illuminate\Database\Eloquent\Collection();
-    }
-
-    public function age(): int
-    {
-        return Carbon::parse($this->birth_date)->age;
+        return $this->hasMany(Photo::class, 'user_id', 'user_id');
     }
 
     public function primaryPhoto()
     {
-        return null;
+        return $this->photos()->where('is_primary', true)->first();
+    }
+
+    public function age(): int
+    {
+        if (!$this->birth_date) return 18;
+        return Carbon::parse($this->birth_date)->age;
     }
 }

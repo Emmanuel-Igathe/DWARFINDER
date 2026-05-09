@@ -33,7 +33,7 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        Log::info('Registration form data:', $request->all());
+        Log::info('Registration attempt:', $request->except(['password', 'password_confirmation']));
         
         $request->validate([
             'name' => ['required', 'string', 'max:255'],

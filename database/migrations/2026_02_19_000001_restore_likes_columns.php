@@ -18,10 +18,15 @@ return new class extends Migration
             if (!Schema::hasColumn('likes', 'liked_user_id')) {
                 $table->foreignId('liked_user_id')->after('user_id')->constrained('users')->onDelete('cascade');
             }
-            
-            // Re-adding unique constraint if columns were added
-            $table->unique(['user_id', 'liked_user_id']);
         });
+
+        try {
+            Schema::table('likes', function (Blueprint $table) {
+                $table->unique(['user_id', 'liked_user_id']);
+            });
+        } catch (\Exception $e) {
+            // Index might already exist
+        }
     }
 
     /**

@@ -403,7 +403,8 @@
 /* ─── Premium Buttons ─────────────────────────────────── */
 
 .btn-royal {
-    @apply bg-royal-gradient text-white font-black py-4 px-10 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9, #4f46e5);
+    @apply text-white font-black py-4 px-10 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2;
     box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
 }
 
@@ -413,7 +414,8 @@
 
 /* Legacy aliases */
 .btn-primary {
-    @apply bg-royal-gradient text-white rounded-full font-bold px-6 py-3 cursor-pointer transition-all;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9, #4f46e5);
+    @apply text-white rounded-full font-bold px-6 py-3 cursor-pointer transition-all;
     border: none;
     box-shadow: 0 4px 16px rgba(139, 92, 246, 0.35);
 }
@@ -630,5 +632,4 @@
         transform: translateY(200px) rotate(720deg);
         opacity: 0;
     }
-}
 }

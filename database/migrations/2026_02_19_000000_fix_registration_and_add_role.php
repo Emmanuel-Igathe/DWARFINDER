@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::table('profiles', function (Blueprint $table) {
             // Make remaining required fields nullable to allow registration before profile setup
+            $table->string('display_name')->nullable()->change();
             $table->date('birth_date')->nullable()->change();
             $table->string('gender')->nullable()->change();
             $table->string('looking_for')->nullable()->change();
+            $table->integer('height')->nullable()->change();
         });
 
         Schema::table('users', function (Blueprint $table) {
